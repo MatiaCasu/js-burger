@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <!-- /Style -->
     <title>Your Burger</title>
   </head>
   <body>
@@ -16,12 +17,42 @@
         <input id="n_burger" type="text" name="" placeholder="Name Your Burger">
       </div>
       <div class="ingredients">
+        <ul>
+          <li>
+            <label for="cheese">cheese</label>
+            <input id="cheese" class="ingredients" type="checkbox" name="cheese" value="10">
+          </li>
+          <li>
+            <label for="lettuce">lettuce</label>
+            <input id="lettuce" class="ingredients" type="checkbox" name="cheese" value="8">
+          </li>
+          <li>
+            <label for="tomato">tomato</label>
+            <input id="tomato" class="ingredients" type="checkbox" name="cheese" value="8">
+          </li>
+          <li>
+            <label for="eggs">eggs</label>
+            <input id="eggs" class="ingredients" type="checkbox" name="cheese" value="15">
+          </li>
+          <li>
+            <label for="ketchup">ketchup</label>
+            <input id="ketchup" class="ingredients" type="checkbox" name="cheese" value="4">
+          </li>
+          <li>
+            <label for="mustard">mustard</label>
+            <input id="mustard" class="ingredients" type="checkbox" name="cheese" value="4">
+          </li>
+        </ul>
       </div>
       <div class="coupon"></div>
-      <button id="compute" type="button" name="button"> calculate</button>
+      <button id="compute" type="button" name="button">calculate</button>
     </main>
     <footer>
-      <div class="your_price"></div>
+      <div class="your_price">
+        Your Price:
+        <span id="price">50</span>
+        $
+      </div>
     </footer>
 
     <script src="js/script.js"></script>
