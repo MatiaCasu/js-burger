@@ -9,55 +9,76 @@
     <title>Your Burger</title>
   </head>
   <body>
-    <header>
-      <h1>Create your burger</h1>
-    </header>
-    <main>
-      <div class="name_burger">
-        <input id="n_burger" type="text" name="" placeholder="Name Your Burger">
-      </div>
-      <div class="ingredients">
-        <ul>
-          <li>
-            <label for="cheese">cheese</label>
-            <input id="cheese" class="ingredients" type="checkbox" name="cheese" value="10">
-          </li>
-          <li>
-            <label for="lettuce">lettuce</label>
-            <input id="lettuce" class="ingredients" type="checkbox" name="cheese" value="8">
-          </li>
-          <li>
-            <label for="tomato">tomato</label>
-            <input id="tomato" class="ingredients" type="checkbox" name="cheese" value="8">
-          </li>
-          <li>
-            <label for="eggs">eggs</label>
-            <input id="eggs" class="ingredients" type="checkbox" name="cheese" value="15">
-          </li>
-          <li>
-            <label for="ketchup">ketchup</label>
-            <input id="ketchup" class="ingredients" type="checkbox" name="cheese" value="4">
-          </li>
-          <li>
-            <label for="mustard">mustard</label>
-            <input id="mustard" class="ingredients" type="checkbox" name="cheese" value="4">
-          </li>
-        </ul>
-      </div>
-      <div class="coupon_box">
-        <input id="yourCoupon" type="text" name="" placeholder="Inserisci il codice">
-      </div>
-      <button id="compute" type="button" name="button">calculate</button>
-    </main>
-    <footer>
-      <div class="your_price">
-        Your Price:
-        <span id="price">50</span>
-        $
-      </div>
-    </footer>
-
-
+    <div class="body_wrap">
+      <header>
+        <div class="title">
+          <h1 class="p20">Create your burger</h1>
+          <img class="burger_img" src="img/burger-top.png" alt="">
+        </div>
+      </header>
+      <main>
+        <div class="name_burger p20">
+          <label for="n_burger"></label>
+          <input id="n_burger" type="text" name="" placeholder="Name Your Burger">
+        </div>
+        <div class="ingredients p20">
+          <h2>Ingredients</h2>
+          <ul class="flex_box">
+            <li class="flex_box">
+              <img src="img/cheese.svg" alt="">
+              <label for="cheese">cheese</label>
+              <input id="cheese" class="ingredients" type="checkbox" name="cheese" value="10">
+              <label class="addLabel" for="cheese">add</label>
+            </li>
+            <li class="flex_box">
+              <img src="img/lettuce.svg" alt="">
+              <label for="lettuce">lettuce</label>
+              <input id="lettuce" class="ingredients" type="checkbox" name="cheese" value="8">
+              <label class="addLabel" for="lettuce">add</label>
+            </li>
+            <li class="flex_box">
+              <img src="img/lettuce.svg" alt="">
+              <label for="tomato">tomato</label>
+              <input id="tomato" class="ingredients" type="checkbox" name="cheese" value="8">
+              <label class="addLabel" for="lettuce">add</label>
+            </li>
+            <li class="flex_box">
+              <img src="img/lettuce.svg" alt="">
+              <label for="eggs">eggs</label>
+              <input id="eggs" class="ingredients" type="checkbox" name="cheese" value="15">
+              <label class="addLabel" for="lettuce">add</label>
+            </li>
+            <li class="flex_box">
+              <img src="img/lettuce.svg" alt="">
+              <label for="ketchup">ketchup</label>
+              <input id="ketchup" class="ingredients" type="checkbox" name="cheese" value="4">
+              <label class="addLabel" for="lettuce">add</label>
+            </li>
+            <li class="flex_box">
+              <img src="img/lettuce.svg" alt="">
+              <label for="mustard">mustard</label>
+              <input id="mustard" class="ingredients" type="checkbox" name="cheese" value="4">
+              <label class="addLabel" for="lettuce">add</label>
+            </li>
+          </ul>
+        </div>
+        <div class="coupon_box flex_box p20">
+          <label for="yourCoupon">Add your Coupon code!</label>
+          <input id="yourCoupon" type="text" name="" value="">
+        </div>
+        <div class="calculate p20">
+          <button id="compute" type="button" name="button">calculate</button>
+        </div>
+      </main>
+      <footer>
+        <div class="your_price flex_box p20">
+          <span>Your Price:</span>
+          <span id="price">
+            $ 50
+          </span>
+        </div>
+      </footer>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -43,7 +43,7 @@ compute.addEventListener("click", function(){
     }
     // /Trova in listaCoupn l'elemento uguale al valore inputCoupon e applica il 20% di sconto
 
-    price.innerHTML = plainPrice;
+    price.innerHTML = "$ " + plainPrice;
   }
   // crea Alert fin che l'input n_burger non ha valore diverso da vuoto ("")
 

@@ -1,0 +1,142 @@
+/* Colori
+top bg orange/bottone calcola
+background-color: #fdbb40;
+
+lateral bg pink- bg coupon
+background-color: #fff5e2;
+
+price/checkbox
+background-color: #d33359;
+/Colori*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid #000; */
+}
+
+/* Mix */
+input, button{
+  border: 0
+}
+
+.flex_box{
+  display: flex;
+}
+/* /Mix */
+
+/* Body */
+body{
+  background-color: #fff5e2;
+}
+
+.body_wrap{
+  width: 50%;
+  margin: 50px auto;
+  background-color: #fff;
+  text-transform: capitalize;
+}
+
+.p20{
+  padding: 20px;
+}
+/* /Body */
+
+/* Header */
+.title{
+  background-color: #fdbb40;
+  position: relative;
+}
+
+img.burger_img{
+  width: 20%;
+  position: absolute;
+  top: 5px;
+  right: -10px;
+}
+/* /Header */
+
+/* Name Burger */
+.name_burger > input::placeholder {
+  color: #000;
+}
+
+.name_burger > input{
+  font-size: 30px;
+  padding: 10px 0;
+  width: 100%;
+}
+/* /Name Burger */
+
+/* Ingredits List */
+.ingredients ul{
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ingredients ul li{
+  align-items: center;
+  flex-basis: 45%;
+  justify-content: flex-start;
+  font-size: 18px;
+}
+
+.ingredients ul li img{
+  width: 40px;
+  margin: 2px;
+}
+
+.ingredients ul li label{
+  margin: 0 15px;
+}
+
+.ingredients ul li input.Ingredients{
+  background-color: pink;
+}
+
+label.addLabel{
+  color: #d33359;
+}
+/* /Ingredits List */
+
+/* Coupon */
+.coupon_box input{
+  flex-basis: 100%;
+}
+
+.coupon_box input:focus {
+  outline: 0;
+  background-color: #d33359;
+  color: #fff;
+  text-align: center;
+}
+/* /Coupon */
+
+/* Calculate */
+.calculate{
+  width: 100%;
+  text-align: center;
+}
+
+.calculate button{
+  background-color: #fdbb40;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 18px;
+  border-radius: 10px;
+}
+/* /Calculate */
+
+/* Price */
+.your_price{
+  background-color: #d33359;
+  color: #fff;
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+/* Price */
