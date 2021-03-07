@@ -5,25 +5,22 @@
 - Stampare prezzo base(50)+ingredienti+coupon
 */
 
-
 // Dichiarazioni variabili
 var nBurger = document.getElementById('n_burger');
 var compute = document.getElementById('compute');
 var ingredienti = document.getElementsByClassName('ingredients');
-var burgerPrice = document.getElementsByClassName('price');
+var burgerPrice = document.getElementById('price');
 var listaCoupon = ["in", "123", "abc", "miao"];
 var inputCoupon = document.getElementById('yourCoupon');
-
 // /Dichiarazioni variabili
 
-// Ad ogni Click di Button
+// Ad ogni Click del bottone Calculate
 compute.addEventListener("click", function(){
   // crea Alert fin che l'input n_burger non ha valore diverso da vuoto ("")
   if(nBurger.value === ""){
     compute = alert("Dai un nome al tuo Hamburger!");
   }
   else{
-
     var plainPrice = 50;
 
     // aggiungi/togli valore ingredienti al prezzo base
@@ -34,18 +31,17 @@ compute.addEventListener("click", function(){
         plainPrice += parseInt(ingredienti[i].value);
       }
     }
-    // aggiungi/togli valore ingredienti al prezzo base
+    // /aggiungi/togli valore ingredienti al prezzo base
 
     // Trova in listaCoupn l'elemento uguale al valore inputCoupon e applica il 20% di sconto
     if(listaCoupon.includes(yourCoupon.value)){
       plainPrice -= plainPrice * 0.2;
-      yourCoupon.value = "";
     }
     // /Trova in listaCoupn l'elemento uguale al valore inputCoupon e applica il 20% di sconto
 
     price.innerHTML = "$ " + plainPrice;
   }
-  // crea Alert fin che l'input n_burger non ha valore diverso da vuoto ("")
+  // /crea Alert fin che l'input n_burger non ha valore diverso da vuoto ("")
 
 });
-// Ad ogni Click di Button
+// /Ad ogni Click del bottone Calculate

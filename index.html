@@ -4,67 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
     <!-- /Style -->
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Lobster&family=Signika&display=swap" rel="stylesheet">
+    <!-- /Font -->
     <title>Your Burger</title>
   </head>
   <body>
     <div class="body_wrap">
       <header>
-        <div class="title">
+        <div class="title flex_box">
           <h1 class="p20">Create your burger</h1>
-          <img class="burger_img" src="img/burger-top.png" alt="">
+          <div class="burger_img">
+            <img src="img/burger-top.png" alt="Hamburger">
+          </div>
         </div>
       </header>
       <main>
         <div class="name_burger p20">
           <label for="n_burger"></label>
-          <input id="n_burger" type="text" name="" placeholder="Name Your Burger">
+          <input id="n_burger" type="text" name="nome" placeholder="Name Your Burger">
         </div>
         <div class="ingredients p20">
           <h2>Ingredients</h2>
           <ul class="flex_box">
             <li class="flex_box">
-              <img src="img/cheese.svg" alt="">
-              <label for="cheese">cheese</label>
+              <label for="cheese" class="flex_box">
+                <img src="img/cheese.svg" alt="Cheese">
+                <span>cheese</span>
+              </label>
               <input id="cheese" class="ingredients" type="checkbox" name="cheese" value="10">
               <label class="addLabel" for="cheese">add</label>
             </li>
             <li class="flex_box">
-              <img src="img/lettuce.svg" alt="">
-              <label for="lettuce">lettuce</label>
+              <label for="lettuce" class="flex_box">
+                <img src="img/lettuce.svg" alt="Lettuce">
+                <span>lettuce</span>
+              </label>
               <input id="lettuce" class="ingredients" type="checkbox" name="cheese" value="8">
               <label class="addLabel" for="lettuce">add</label>
             </li>
             <li class="flex_box">
-              <img src="img/lettuce.svg" alt="">
-              <label for="tomato">tomato</label>
+              <label for="tomato" class="flex_box">
+                <img src="img/tomato.svg" alt="tomato">
+                <span>tomato</span>
+              </label>
               <input id="tomato" class="ingredients" type="checkbox" name="cheese" value="8">
-              <label class="addLabel" for="lettuce">add</label>
+              <label class="addLabel" for="tomato">add</label>
             </li>
             <li class="flex_box">
-              <img src="img/lettuce.svg" alt="">
-              <label for="eggs">eggs</label>
+              <label for="eggs" class="flex_box">
+                <img src="img/fried-egg.svg" alt="eggs">
+                <span>eggs</span>
+              </label>
               <input id="eggs" class="ingredients" type="checkbox" name="cheese" value="15">
-              <label class="addLabel" for="lettuce">add</label>
+              <label class="addLabel" for="eggs">add</label>
             </li>
             <li class="flex_box">
-              <img src="img/lettuce.svg" alt="">
-              <label for="ketchup">ketchup</label>
+              <label for="ketchup" class="flex_box">
+                <img src="img/ketchup.svg" alt="ketchup">
+                <span>ketchup</span>
+              </label>
               <input id="ketchup" class="ingredients" type="checkbox" name="cheese" value="4">
-              <label class="addLabel" for="lettuce">add</label>
+              <label class="addLabel" for="ketchup">add</label>
             </li>
             <li class="flex_box">
-              <img src="img/lettuce.svg" alt="">
-              <label for="mustard">mustard</label>
+              <label for="mustard" class="flex_box">
+                <img src="img/mustard.svg" alt="mustard">
+                <span>mustard</span>
+              </label>
               <input id="mustard" class="ingredients" type="checkbox" name="cheese" value="4">
-              <label class="addLabel" for="lettuce">add</label>
+              <label class="addLabel" for="mustard">add</label>
             </li>
           </ul>
         </div>
         <div class="coupon_box flex_box p20">
           <label for="yourCoupon">Add your Coupon code!</label>
-          <input id="yourCoupon" type="text" name="" value="">
+          <input id="yourCoupon" type="text" name="coupon" value="">
         </div>
         <div class="calculate p20">
           <button id="compute" type="button" name="button">calculate</button>
